@@ -1,0 +1,24 @@
+
+ <div class="login">
+  <div class="heading">
+    <h2>Sign in</h2>
+    <h3>Admin System</h3>
+    <form #formData='ngForm' (ngSubmit)="onSubmit(formData)" >
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input type="text" class="form-control" placeholder="Username or email" (ngModel)="email" name="email">
+          </div>
+
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+          <input type="password" class="form-control" placeholder="Password" (ngModel)="password" name="password">
+        </div>
+
+        <button type="submit" class="float">Login</button>
+        <div>
+        {{state}}
+      </div>
+       </form>
+ 		</div>
+ </div>

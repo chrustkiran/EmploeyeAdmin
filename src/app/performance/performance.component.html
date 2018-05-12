@@ -1,0 +1,12 @@
+<app-navigation></app-navigation>
+<body>
+<div [chart]="chart"></div>
+<ul>
+  <li class="text" *ngFor="let keyname of keynames | async">
+    {{keyname}}
+  </li>
+</ul>
+<div>
+
+</div>
+</body>

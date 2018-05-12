@@ -1,0 +1,30 @@
+<app-navigation></app-navigation>
+<!-- <li *ngFor="let item of items | async">
+    {{ item.key}}
+    <br>
+    <div *ngFor="let i of item.val">
+      {{i | json}}
+    </div>
+</li> -->
+
+<ul *ngFor="let item of items | async">
+
+
+<div *ngFor="let i of names | async">
+  {{i.name }}
+</div>
+   <ul>
+     <li *ngFor="let i of item.val">
+        <p> Task's name :  {{i.value.name }} </p>
+          <p> Date :  {{i.value.date }} </p>
+            <p> Starting time :  {{i.value.start_time }} </p>
+          <p> Ending time :   {{i.value.end_time }} </p>
+
+
+
+
+
+    </li>
+
+   </ul>
+ </ul>

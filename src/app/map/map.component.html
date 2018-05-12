@@ -1,0 +1,9 @@
+<app-navigation></app-navigation>
+
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker *ngFor="let itemRef of itemRefs | async" [latitude]="itemRef.lat" [longitude]="itemRef.lng" [title]="itemRef.name" [label]="itemRef.name"
+  [iconUrl]="markerIconUrl()"></agm-marker>
+</agm-map>
+<!-- <li *ngFor="let itemRef of itemRefs | async">
+    {{ itemRef| json }}
+</li> -->
